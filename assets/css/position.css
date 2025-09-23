@@ -1,0 +1,39 @@
+p{
+    font-size: 30px;
+}
+
+.fix{
+    width: 100px;
+    height:100px;
+    background-color: blueviolet;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+.sticky{
+    width: 100px;
+    height:100px;
+    background-color: yellow;
+    position: sticky;
+    top: 0;
+}
+.absolute{
+    width: 100px;
+    height:100px;
+    background-color: green;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+}
+.relative{
+    width: 100px;
+    height:100px;
+    background-color: red;
+    position: relative;
+    top: 200px;
+    left: 500px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}

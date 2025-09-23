@@ -1,0 +1,89 @@
+.transform{
+    width: 300px;
+    height:300px;
+    background-color: brown;
+    margin: auto;
+    transition-duration: 3s;   
+    animation-duration: 2s;
+    animation-name: first;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+.animation{
+    width: 300px;
+    height:300px;
+    background-color: brown;
+    /* margin: auto; */
+    transition-duration: 3s;   
+    animation-duration: 2s;
+    animation-name: first;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+.animation2{
+    width: 300px;
+    height:300px;
+    background-color: brown;
+    margin: auto 1000px;
+    transition-duration: 3s;   
+    animation-duration: 2s;
+    animation-name: first;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+.transform:hover{
+   transform: translate(100px,100px) rotate(3600deg) scale(2,2) skew(20deg,20deg);
+   border-radius: 50%;
+}
+@keyframes first{
+  0%{
+    background-color: black;
+  }
+  10%{
+    background-color: rgb(204, 0, 255);
+    transform: translate(500px,200px) rotate(400deg);
+  }
+   20%{
+    background-color: rgb(255, 102, 0);
+    transform: translate(200px,600px) rotate(370deg) skew(20deg,20deg);
+  }
+   30%{
+    background-color: rgb(255, 200, 0);
+    transform: translate(600px,800px) rotate(340deg) skew(20deg,20deg);
+  }
+   40%{
+    background-color: rgb(17, 255, 0);
+    transform: translate(400px,100px) rotate(320deg) skew(20deg,20deg);
+  }
+   50%{
+    background-color: rgb(255, 0, 0);
+    transform: translate(300px,50px) rotate(310deg) skew(20deg,20deg);
+  }
+   60%{
+    background-color: rgb(0, 0, 0);
+    transform: translate(-200px,-200px) rotate(300deg) skew(20deg,20deg);
+  }
+   70%{
+    background-color: rgb(251, 252, 188);
+    transform: translate(-80px,-800px) rotate(300deg) skew(20deg,20deg);
+  }
+  50%{
+    background-color: blue;
+    transform: translate(0px,400px) rotate(600deg) skew(20deg,20deg);
+  }
+   80%{
+    background-color: aqua;
+    transform: translate(200px,200px) rotate(300deg) skew(20deg,20deg);
+  }
+  90%{
+    background-color: blueviolet;   
+    transform: translate(-100px,900px) rotate(1000deg) skew(20deg,20deg);
+  }
+  100%{
+    background-color: yellow;
+    transform: translate(0px,0px) rotate(3600deg) skew(20deg,20deg);
+  }
+}

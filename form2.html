@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form{
+            border-style: groove;
+        }
+    </style>
+</head> 
+<body>
+    <table  border="2" cellspacing="0" cellpadding="10" align="center">
+        <caption><h1>From</h1></caption>
+        <form action="">
+        <tr>
+            <th><label for="name">Name: </label></th>
+            <td><input type="text" id="name" name="name" placeholder="enter your name" required></td>
+        </tr>
+        <tr>
+            <th><label for="email">Email: </label></th>
+            <td><input type="email" name="email" placeholder="enter your email"></td>
+        </tr>
+        <tr>
+            <th><label for="phone">Phone no: </label></th>
+            <td><input type="text" name="phone" id="" placeholder="enter 10 digit number"></td>
+        </tr>
+        <tr>
+            <th><label for="">Age: </label></th>
+            <td><input type="number" name="age" id="" max="100" min="18"></td>
+        </tr>
+        <tr>
+            <th><label for="pwd">Password:  </label></th>
+            <td><input type="password" name="pwd" id="" placeholder="enter your password"></td>
+        </tr>
+        <tr>
+            <th><label for="address">Address: </label></th>
+            <td><textarea name="address" id="" placeholder="enter your address"></textarea></td>
+        </tr>
+        <tr>
+            <th><label for="gender">Gender: </label></th>
+            <td> <input type="radio" name="gender" id="" checked>Male
+                     <input type="radio" name="gender" id="">Female</td>
+        </tr>
+        <tr>
+            <th><label for="hobby">Hobbies: </label></th>
+            <td><input type="checkbox" name="hobby" id="" checked>Dancing
+        <input type="checkbox" name="hobby" id="">Singing
+        <input type="checkbox" name="hobby" id="">Gaming</td>
+        </tr>
+        <tr>
+            <th><label for="country">Country: </label></th>
+            <td><select name="hobby" id="">
+            <option value="" selected disabled>Select your country</option>
+            <option value="india">India</option>
+            <option value="us">US</option>
+            <option value="uk">UK</option>
+        </select></td>
+        </tr>
+        <tr>
+            <th colspan="2"><input type="submit" value="Submit"></th>
+        </tr>
+        <tr>
+            <th colspan="2"><input type="reset" value="Reset"></th>
+        </tr>
+        </form>
+    </table>
+</body>
+</html>

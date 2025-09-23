@@ -1,0 +1,115 @@
+body{
+    background-color: antiquewhite;
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoCMHTMU6raRXQJfn_wfhyY19Uo9nOvKaahg&s); */
+}
+h1{
+    color: blue; 
+    text-align: center;
+    background-color: rgba(35, 351, 21,0.3);
+    font-size: 50px;
+    box-sizing: content-box;
+}
+.formatting{
+    color: salmon;
+    background-color: rgb(20, 149, 122);
+    /* background-image: url(https://web.dev/static/css/image/hero-css.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; */
+    font-size: 25px;
+   font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    text-decoration: overline;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    font-style: italic;
+    font-weight: 400;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #3b00fc;
+    border-radius: 20px;
+    border-bottom: 10px dotted #3b00fc;
+    box-shadow: 10px 20px 20px 20px rgb(162, 165, 255);
+    text-shadow: 2px 2px 2px #b73d92;
+    
+}
+img{
+    width: 500px;
+    height: 500px;
+}
+
+.padding{
+    width: 500px;
+    height: 500px;
+    border: 20px ridge black;
+    padding: 20px 20px;
+    margin: 20px auto;
+    background-color: aquamarine;
+}
+
+.boxsizing{
+    font-size: 30px;
+    /* border-style: solid;
+    border-color: aqua;
+    text-align: justify;
+    box-sizing: border-box; */
+    width: 500px;
+    height: 500px;
+    padding: 5px;
+    margin-top: 0px;
+    margin-left: 0px;
+    line-height: normal;
+    float: none;
+}
+
+.float{
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
+.div3{
+    width: max-content;
+    border-style: solid;
+    border-color: black;
+    background-image: repeating-conic-gradient(from 90deg,red,yellow,blue, green, grey, black, pink, brown, orange);
+}
+
+.pseudo{
+    font-size: 30px;
+    border: 5px solid red;
+    padding: 20px;
+    box-shadow: 10px 10px 2px 5px;
+    text-shadow: 3px 3px 4px;
+    background: rgba(5, 351, 21,0.3);
+}
+.pseudo::first-line{
+    color: #3b00fc;
+    font-size: 40px;
+    background-color: aqua;
+}
+
+.pseudo::first-letter{
+    font-weight: 900;
+    font-size: 50px;
+}
+
+::selection{
+    color: yellow;
+    background: aqua;
+}
+
+::marker{
+    color: brown;
+    font-size: 30px;
+}
+
+.pseudo::before{
+    content: "\f013";
+}
+
+.pseudo::after{
+    content: "\f019";
+}

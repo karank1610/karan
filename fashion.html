@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .parent {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .main2 {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-left: 30px;
+        }
+
+        span {
+            font-size: 35px;
+            font-weight: 600;
+        }
+
+        a {
+            font-size: 15px;
+            font-family: "Jost", sans-serif;
+            text-decoration: none;
+            border: 2px solid transparent;
+            background-color: #CF9163;
+            color: white;
+            padding: 7px 17px;
+            border-radius: 5%;
+        }
+
+        .first {
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .first h2 {
+            font-family: 'Jost', sans-serif;
+            font-size: 25px;
+            font-weight: 450;
+            text-align: left;
+            line-height: 1.4;
+            color: black;
+            position: absolute;
+            top: 40%;
+            left: 10%;
+            right: 0%;
+            transform: translate(0, -50%);
+        }
+
+        .first p {
+            position: absolute;
+            top: 60%;
+            left: 10%;
+            right: 0%;
+            transform: translate(0, -50%);
+        }
+
+        .second {
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .second h2 {
+            font-family: 'Jost', sans-serif;
+            font-size: 25px;
+            font-weight: 450;
+            text-align: left;
+            line-height: 1.3;
+            color: black;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            right: 0%;
+            transform: translate(0, -50%);
+        }
+
+        .second p {
+            position: absolute;
+            top: 70%;
+            left: 10%;
+            right: 0%;
+            transform: translate(0, -50%);
+        }
+
+        .third {
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .third h2 {
+            font-family: 'Jost', sans-serif;
+            font-size: 25px;
+            font-weight: 450;
+            text-align: left;
+            line-height: 1.3;
+            color: black;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            right: 0%;
+            transform: translate(0, -50%);
+        }
+
+        .third p {
+            position: absolute;
+            top: 70%;
+            left: 10%;
+            right: 0%;
+            transform: translate(0, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="main">
+            <div class="first">
+                <img src="assets/img/fashion1.jpg" alt="">
+                <h2>Discount<br><span>50% OFF</span><br>Women <br>Collection</h2>
+                <p><a href="#">SHOP NOW</a></p>
+            </div>
+        </div>
+        <div class="main2">
+            <div class="second">
+                <img src="assets/img/fashion2.jpg" alt="">
+                <h2>Up to<br><span>15% OFF</span><br>Trendy<br>Fashion</h2>
+                <p><a href="#">SHOP NOW</a></p>
+            </div>
+            <div class="third">
+                <img src="assets/img/fashion3.jpg" alt="">
+                <h2>Flat<br><span>30% OFF</span><br>Stylish<br>Jacket</h2>
+                <p><a href="#">SHOP NOW</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

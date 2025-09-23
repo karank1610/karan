@@ -1,0 +1,26 @@
+p:first-child{
+   color:aqua;
+}
+p:last-child{
+    color: brown !important;
+}
+
+p:nth-child(1){
+    background-color: chartreuse;
+}
+
+a:link{
+    color: orangered;
+}
+a:visited{
+    color: rgb(222, 208, 25);
+}
+a:hover{
+    color: aqua;
+}
+a:active{
+    color: black;
+}
+input:focus{
+    background-color: aqua;
+}

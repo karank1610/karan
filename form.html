@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html form</title>
+    <style>
+        form{
+            background-color: aquamarine;
+            border: 5px solid black;
+            width: 800px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body >
+    <h1 align="center" style="color: yellowgreen;">Html Form</h1>
+    <div align="center">
+    <form action="">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="enter your name" required><br><br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" placeholder="enter your email"><br><br>
+        <label for="phone">Phone no: </label>
+        <input type="number" name="phone" id="" placeholder="enter 10 digit number"><br><br>
+        <label for="pwd">Password:  </label>
+        <input type="password" name="pwd" id="" placeholder="enter your password"><br><br>
+        <label for="address">Address: </label>
+        <textarea name="address" id="" placeholder="enter your address"></textarea><br><br>
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender" id="" checked>Male
+        <input type="radio" name="gender" id="">Female
+        <br><br>
+        <label for="hobby">Hobbies: </label>
+        <input type="checkbox" name="hobby" id="" checked>Dancing
+        <input type="checkbox" name="hobby" id="">Singing
+        <input type="checkbox" name="hobby" id="">Gaming
+        <br><br>
+        <label for="country">Country: </label>
+        <select name="hobby" id="">
+            <option value="" selected disabled>Select your country</option>
+            <option value="india">India</option>
+            <option value="us">US</option>
+            <option value="uk">UK</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+</body>
+</html>
+

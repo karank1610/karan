@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <table border="2" cellpadding="10" align="center">
+        <form action="">
+        <tr>
+            <td colspan="2">
+            <table border="0" cellpadding="10">
+                <tr>
+                    <th colspan="2"><h2>Service Login</h2></th>
+                </tr>
+                <tr>
+                    <td><label for="">Username: </label></td>
+                    <td><input type="text" name="name" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password: </label></td>
+                    <td><input type="password" name="pwd" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">City of Employment: </label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Web server: </label></td>
+                    <td><select name="server" id="">
+                            <option value="" selected disabled>Choose a server</option>
+                            <option value="apache">Apache</option>
+                            <option value="iis">IIS</option>
+                            <option value="nginx">Nginx</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <th colspan="2"></th>
+                </tr>
+                <tr>
+                    <td><label for="role">Please Specify Your Role: </label></td>
+                    <td> <input type="radio" name="role" id="" checked>Admin <br>
+                        <input type="radio" name="role" id="">Engineer <br>
+                        <input type="radio" name="role" id="">Manager <br>
+                        <input type="radio" name="role" id="">Guest
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2"></th>
+                </tr>
+                <tr>
+                    <td><label for="sign">Single Sign - on to the following: </label></td>
+                    <td><input type="checkbox" name="sign" id="" checked>Mail <br>
+                        <input type="checkbox" name="sign" id="">Payroll <br>
+                        <input type="checkbox" name="sign" id="">Self-Service 
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" name="Login" value="Login">
+                <input type="reset" value="Reset" name="Reset">
+            </td>
+        </tr>
+        </form>
+    </table>
+</body>
+
+</html>

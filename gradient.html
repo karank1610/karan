@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .linear{
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            margin: 0 auto;
+            background-image: repeating-linear-gradient(90deg,blue 20%,red 30%,orange 10%);
+            transition-duration: 20s;
+            transition-delay: 0ms;
+        }
+        .radial{
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            margin: 0 auto;
+            background-image: repeating-radial-gradient(circle,blue,red ,orange);
+            transition-duration: 20s;
+            transition-delay: 0ms;
+        }
+        .conic{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            border: 2px solid black;
+            margin: 0 auto;
+            background-image: repeating-conic-gradient(red 0deg,red 5deg,yellow 5deg,yellow 10deg);
+            transition-duration: 20s;
+            transition-delay: 0ms;
+        }
+        .conic:hover{
+            transform: scale(2,2) rotate(10000000deg) translate(100px,50px) skew(20deg,50deg);
+        }
+        .radial:hover{
+            transform: scale(2,2) rotate(10000000deg) translate(100px,50px) skew(20deg,50deg);
+        }
+        .linear:hover{
+            transform: scale(100,100) rotate(10000000deg) translate(1000px,500px) skew(2000deg,5000deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="linear"></div>
+    <br><br>
+    <div class="radial"></div>
+    <br><br>
+    <div class="conic"></div>
+</body>
+</html>
