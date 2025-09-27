@@ -94,3 +94,280 @@ img {
     transform: translate(0,-50%);
     opacity: 0.7;
 }
+
+/* new product heading */
+
+.product-heading-main{
+    display: block;
+    margin: 15px 0;
+        font-family: 'Roboto Condensed','Helvetica Neue','Helvetica','Arial,sans-serif';
+
+}
+
+.product-heading-container{
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.product-heading-child span{
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transform: scale(1,1.1);
+}
+
+.product-heading-child span::after{
+    content: "\f7a4";
+    font-family: "Font Awesome 7 Free";
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+/* new product row */
+
+.new-product-main{
+    display: block;
+    margin: 15px 0;
+}
+
+.new-product-main .container{
+    display: block;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.new-product-main .new-product-child-main{
+    display: flex;
+}
+
+.new-product-child-main .new-product-child{
+    display: block;
+    width: 25%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* new product details */
+
+.product-item-detail{
+    font-family: 'Roboto Condensed','Helvetica Neue','Helvetica','Arial,sans-serif';
+    display: flex;
+    margin: 10px auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-item-detail a{
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.addtocart a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid transparent;
+    background-color: #8dba23;
+    padding: 10px 16px;
+}
+.product-item-detail span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* advertisement 2 */
+
+.adv2-main{
+    display: block;
+    margin: 50px 0;
+}
+
+.adv2-main .container{
+    display: block;
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.adv2-main .adv2-parent{
+    display: flex;
+        margin-left: -15px;
+    margin-right: -15px;
+}
+
+.adv2-parent .adv2-child{
+    display: block;
+    width: 50%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* trending product heading */
+
+.trending-product-heading-main{
+        font-family: 'Roboto Condensed','Helvetica Neue','Helvetica','Arial,sans-serif';
+    display: block;
+    margin: 15px 0;
+}
+
+.trending-product-heading-container{
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.trending-product-heading-child span{
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 300;
+    transform: scale(1,1.1);
+}
+
+.trending-product-heading-child span::after{
+    content: "\f7a4";
+    font-family: "Font Awesome 7 Free";
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+/* trending product row */
+
+.trending-product-main{
+    display: block;
+    margin: 15px 0;
+}
+
+.trending-product-main .container{
+    display: block;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.trending-product-main .trending-product-child-main{
+    display: flex;
+}
+
+.trending-product-child-main .trending-product-child{
+    display: block;
+    width: 25%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* trending product details */
+
+.trending-product-item-detail{
+    font-family: 'Roboto Condensed','Helvetica Neue','Helvetica','Arial,sans-serif';
+    display: flex;
+    margin: 10px auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trending-product-item-detail a{
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.addtocart a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid transparent;
+    background-color: #8dba23;
+    padding: 10px 16px;
+}
+.trending-product-item-detail span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* sale advertisement 1 */
+
+.sale-adv-main{
+    display: block;
+    margin: 40px 0;
+
+}
+
+.sale-adv-child{
+    background-image: url("https://demo4techies.com/magento/magetheme046/pub/media/wysiwyg/hiddentheme046/home/adv-image-6.png");
+    background-attachment: fixed;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    padding: 300px 0;
+}
+
+/* sale advertisement details */
+
+.sale-adv-detail .title{
+    color: #8dba23;
+    font-size: 55px;
+    letter-spacing: 2px;
+}
+
+.sale-adv-detail .title2{
+    display: block;
+    color: white;
+    font-size: 75px;
+    letter-spacing: 10px;
+    padding-bottom: 15px;
+}
+
+.sale-adv-detail .info{
+    color: white;
+    letter-spacing: 1px;
+}
+
+.sale-adv-detail {
+	position: absolute;
+	display: block;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translate(0,-50%);
+	text-align: center;
+}
+
+.sale-adv-detail p{
+    padding: 15px 0;
+    transform: scale(1,1.1);
+}
+
+.sale-adv-detail a{
+    font-family: 'Roboto Condensed','Helvetica Neue','Helvetica','Arial,sans-serif';
+    font-size: 12px;
+
+    text-decoration: none;
+    color: white;
+    border: 1px solid transparent;
+    background-color: #8dba23;
+    padding: 12px 20px;
+}
