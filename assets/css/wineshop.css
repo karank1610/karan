@@ -450,3 +450,118 @@ img {
     text-transform: capitalize;
     font-weight: 600;
 }
+
+/* recent posts heading */
+
+.recent-posts-heading-main{
+        font-family: 'Roboto Condensed','Helvetica Neue','Helvetica','Arial,sans-serif';
+    display: block;
+    margin: 15px 0;
+}
+
+.recent-posts-heading-container{
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.recent-posts-heading-child span{
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 300;
+    transform: scale(1,1.1);
+}
+
+.recent-posts-heading-child span::after{
+    content: "\f7a4";
+    font-family: "Font Awesome 7 Free";
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+/* recent posts main block */
+
+.recent-posts-main{
+    display: block;
+    margin: 15px 0;
+}
+
+.recent-posts-main .container{
+    display: block;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.recent-posts-main .recent-posts-child-main{
+    display: flex;
+}
+
+.recent-posts-child-main .recent-posts-child{
+    display: block;
+    width: 33.33%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.recent-posts-child span{
+    display: block;
+    padding: 10px 0;
+    box-sizing: border-box;
+    color: black;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    transform: scale(1,0.7);
+    font-size: 18px;
+
+}
+
+.recent-posts-child a{
+    text-decoration: none;
+}
+
+.recent-posts-child p{
+    margin: 0;
+    font-size: 14px;
+    transform: scale(1,0.8);
+    color: grey;
+    letter-spacing: 0.3px;
+}
+
+.recent-posts-child span:hover{
+    color: #8dba23;
+    transition: 0.3s all ease;
+}
+
+/* brand block */
+
+.brand-main{
+    display: block;
+    margin: 100px 0;
+}
+
+.brand-main .container{
+    display: block;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.brand-child-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-child-main .brand-child{
+    display: block;
+    width: 16.66%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
