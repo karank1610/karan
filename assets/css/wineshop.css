@@ -1,4 +1,4 @@
-wineshop.css body {
+body {
     margin: 0;
     font-family: "Fjalla One", sans-serif;
 }
@@ -66,6 +66,9 @@ img {
     letter-spacing: 1px;
     color: white;
 }
+
+/* header block */
+
 
 /* adv block */
 
@@ -629,6 +632,18 @@ img {
     font-size: 14px;
     background-color: #f5f5f5;
 }
+.newsletter{
+    position: relative;
+}
+
+.newsletter::after {
+	content: "\f003";
+	font-weight: 600;
+	font-family: "Font Awesome 7 Free";
+	position: absolute;
+	right: 30%;
+	top: 13%;
+}
 
 .newsletter-input::placeholder {
     color: black;
@@ -664,7 +679,7 @@ ul {
     clear: both;
 }
 
-.footer-main .column-heading{
+.footer-main .column-heading {
     width: 100%;
     display: block;
 }
@@ -691,10 +706,21 @@ ul {
 }
 
 .top-inner .footer-column {
-    width: 25%;
+    width: 23.33%;
     padding: 0 15px;
     box-sizing: border-box;
     display: block;
+}
+
+.footer-column-1 {
+    width: 30%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.footer-column-1 .info-main .column-heading a img {
+    max-width: 271px;
 }
 
 .top-inner .footer-column .column-heading {
@@ -718,10 +744,17 @@ ul {
     text-transform: capitalize;
 }
 
-.top-inner .footer-column .info {
+.top-inner .footer-column-1 .info {
     color: #737373;
     font-size: 14px;
     letter-spacing: 0.4px;
+}
+
+.top-inner .footer-column-1 .info ul{
+    padding-top: 10px;
+}
+.top-inner .footer-column-1 .info ul li{
+    padding-bottom: 10px;
 }
 
 .top-inner .footer-column ul li a:hover {
@@ -729,7 +762,7 @@ ul {
     transition: 0.5s all ease;
 }
 
-.footer-column .info-main{
+.footer-column .info-main {
     display: block;
     width: 100%;
     padding-right: 60px;
@@ -759,13 +792,13 @@ ul {
     align-items: center;
 }
 
-.bottom-inner .links{
+.bottom-inner .links {
     display: flex;
     gap: 15px;
     padding-bottom: 10px;
 }
 
-.bottom-inner .links a{
+.bottom-inner .links a {
     color: #737373;
     font-size: 14px;
     letter-spacing: 0.5px;
@@ -788,7 +821,7 @@ ul {
     transition: 0.5s all ease;
 }
 
-.bottom-inner .copyright{
+.bottom-inner .copyright {
     color: #737373;
     font-size: 13px;
 }

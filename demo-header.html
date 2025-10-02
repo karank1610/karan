@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        /* parent block */
+
+        .parent-main {
+            width: 100%;
+            height: 500px;
+            background-color: aquamarine;
+            position: relative;
+        }
+
+
+        .header-main {
+            position: absolute;
+            top: 20%;
+            left: 0;
+            right: 0;
+            transform: translate(0, -50%);
+            display: block;
+            /* margin: 30px 0; */
+            clear: both;
+        }
+
+        .header-top {
+            display: block;
+            background-color: #000000;
+        }
+
+        .header-top .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+
+        /* navigation main manu */
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .nav-menu>li>a {
+            padding: 33px 15px;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+            transition-duration: 0.5s;
+        }
+
+        .nav-menu>li>a:hover {
+            color: #8dba23;
+        }
+
+        .nav-menu>li:nth-child(2)>a::after {
+            content: "\f107";
+            font-family: "Font Awesome 7 Free";
+            font-weight: 600;
+            color: #fff;
+            font-size: 12px;
+            padding-left: 7px;
+        }
+
+        .nav-menu>li:nth-child(3)>a::after {
+            content: "\f107";
+            font-family: "Font Awesome 7 Free";
+            font-weight: 900;
+            color: #fff;
+            font-size: 12px;
+            padding-left: 7px;
+        }
+
+        .nav-menu>li:nth-child(4)>a::after {
+            content: "\f107";
+            font-family: "Font Awesome 7 Free";
+            font-weight: 900;
+            color: #fff;
+            font-size: 12px;
+            padding-left: 7px;
+        }
+
+        .nav-menu>li:nth-child(5)>a::after {
+            content: "\f107";
+            font-family: "Font Awesome 7 Free";
+            font-weight: 900;
+            color: #fff;
+            font-size: 12px;
+            padding-left: 7px;
+        }
+
+        /* page sub menu */
+
+        .nav-menu>li {
+            display: block;
+            position: relative;
+        }
+
+        .nav-menu>li:hover .pages-sub-menu {
+            display: block;
+        }
+
+        .nav-menu>li .pages-sub-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
+            background-color: #8dba23;
+            width: 200px;
+            padding: 10px 0;
+        }
+
+        .nav-menu>li .pages-sub-menu>li>a {
+            color: #ffffff;
+            font-size: 14px;
+            padding: 10px 20px;
+            text-transform: capitalize;
+        }
+
+        .nav-menu>li .pages-sub-menu>li>a:hover {
+            color: #0e0d0b;
+        }
+
+        /* shop sub menu */
+
+        .nav-menu>li:hover .shop-sub-menu {
+            display: block;
+        }
+
+        .nav-menu>li .shop-sub-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transform: translate(-27%, 0);
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
+            background-color: #8dba23;
+            width: 800px;
+        }
+
+        .nav-menu>li .shop-sub-menu li a {
+            color: #ffffff;
+            font-size: 13px;
+            padding: 7px 20px;
+            text-transform: capitalize;
+        }
+
+        .nav-menu>li .shop-sub-menu li a:hover {
+            color: #0e0d0b;
+        }
+
+        .nav-menu>li .sub-menu-column-main .column-heading a {
+            color: #0e0d0b;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 20px;
+            text-transform: uppercase;
+        }
+
+        .nav-menu>li .sub-menu-column-main .column-heading::after {
+            content: "\f068";
+            font-family: "Font Awesome 7 Free";
+            font-weight: 800;
+            color: #0e0d0b;
+            font-size: 20px;
+            padding-left: 20px;
+            padding-bottom: 5px;
+            display: block;
+        }
+
+        .nav-menu>li .sub-menu-column-main {
+            display: flex;
+            padding: 20px 0;
+            justify-content: space-around;
+        }
+
+        /* electronics sub menu */
+
+        .nav-menu>li:hover .electronics-sub-menu {
+            display: block;
+        }
+
+        .nav-menu>li .electronics-sub-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
+            background-color: #8dba23;
+            width: 350px;
+        }
+
+        .nav-menu>li .electronics-sub-menu li a {
+            color: #ffffff;
+            font-size: 13px;
+            padding: 7px 20px;
+            text-transform: capitalize;
+        }
+
+        .nav-menu>li .electronics-sub-menu li a:hover {
+            color: #0e0d0b;
+        }
+
+        .nav-menu>li .sub-menu-column-main .column-heading a {
+            color: #0e0d0b;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 20px;
+            text-transform: uppercase;
+        }
+
+        .nav-menu>li .sub-menu-column-main .column-heading::after {
+            content: "\f068";
+            font-family: "Font Awesome 7 Free";
+            font-weight: 800;
+            color: #0e0d0b;
+            font-size: 20px;
+            padding-left: 20px;
+            padding-bottom: 5px;
+            display: block;
+        }
+
+        .nav-menu>li .sub-menu-column-main {
+            display: flex;
+            padding: 20px 0;
+            justify-content: space-around;
+        }
+
+        /* sports and books sub menu */
+
+        .nav-menu>li {
+            display: block;
+            position: relative;
+        }
+
+        .nav-menu>li:hover .sport-book-sub-menu {
+            display: block;
+        }
+
+        .nav-menu>li .sport-book-sub-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
+            background-color: #8dba23;
+            width: 200px;
+            padding: 10px 0;
+        }
+
+        .nav-menu>li .sport-book-sub-menu>li>a {
+            color: #ffffff;
+            font-size: 14px;
+            padding: 10px 20px;
+            text-transform: capitalize;
+        }
+
+        .nav-menu>li .sport-book-sub-menu>li>a:hover {
+            color: #0e0d0b;
+        }
+
+        .nav-menu>li .sport-book-sub-menu>li>a:hover::after {
+            color: #0e0d0b;
+            /* Change to the desired color */
+        }
+
+        .nav-menu>li .sport-book-sub-menu>li:first-child>a::after {
+            content: "\f107";
+            font-family: "Font Awesome 7 Free";
+            font-weight: 900;
+            color: #fff;
+            font-size: 12px;
+            float: right;
+        }
+
+        .nav-menu>li .sport-book-sub-menu>li:nth-child(2)>a::after {
+            content: "\f107";
+            font-family: "Font Awesome 7 Free";
+            font-weight: 900;
+            color: #fff;
+            font-size: 12px;
+            float: right;
+        }
+
+        /* sport sub menu inside sports and book sub menu */
+
+        .sport-book-sub-menu-menu>li {
+            display: block;
+            position: relative;
+        }
+
+        .sport-book-sub-menu>li:hover .sport-sub-menu {
+            display: block;
+        }
+
+        .sport-book-sub-menu>li .sport-sub-menu {
+            display: none;
+            position: absolute;
+            top: 10%;
+            left: 100%;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
+            background-color: #8dba23;
+            width: 200px;
+            padding: 10px 0;
+        }
+
+        .sport-book-sub-menu>li .sport-sub-menu>li>a {
+            color: #ffffff;
+            font-size: 14px;
+            padding: 10px 20px;
+            text-transform: capitalize;
+        }
+
+        .sport-book-sub-menu>li .sport-sub-menu>li>a:hover {
+            color: #0e0d0b;
+        }
+
+        /* books sub menu inside sports and book sub menu */
+
+        .sport-book-sub-menu-menu>li {
+            display: block;
+            position: relative;
+        }
+
+        .sport-book-sub-menu>li:hover .book-sub-menu {
+            display: block;
+        }
+
+        .sport-book-sub-menu>li .book-sub-menu {
+            display: none;
+            position: absolute;
+            top: 35%;
+            left: 100%;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
+            background-color: #8dba23;
+            width: 200px;
+            padding: 10px 0;
+        }
+
+        .sport-book-sub-menu>li .book-sub-menu>li>a {
+            color: #ffffff;
+            font-size: 14px;
+            padding: 10px 20px;
+            text-transform: capitalize;
+        }
+
+        .sport-book-sub-menu>li .book-sub-menu>li>a:hover {
+            color: #0e0d0b;
+        }
+
+        /* search and cart */
+        .search-cart {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-cart a {
+            color: #ffffff;
+            padding: 15px 10px;
+            font-size: 20px;
+        }
+
+        .search-cart a:first-child {
+            border-right: 1px solid #737373;
+            padding: 5px 15px;
+            margin-right: 5px;
+        }
+
+        .search-cart a:hover {
+            color: #8dba23;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent-main">
+        <div class="header-main">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-logo">
+                        <a href="#"><img src="assets/img/logo.png" alt=""></a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#">home</a></li>
+                        <li>
+                            <a href="#">pages</a>
+                            <ul class="pages-sub-menu">
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">faq</a></li>
+                                <li><a href="#">404</a></li>
+                                <li><a href="#">pricing</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">shop</a>
+                            <div class="shop-sub-menu">
+                                <div class="sub-menu-column-main">
+                                    <div class="sub-menu-column">
+                                        <div class="column-heading"><a href="#">fashion</a></div>
+                                        <ul>
+                                            <li><a href="#">men</a></li>
+                                            <li><a href="#">women</a></li>
+                                            <li><a href="#">kid</a></li>
+                                            <li><a href="#">accessories</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-menu-column">
+                                        <div class="column-heading"><a href="#">furniture</a></div>
+                                        <ul>
+                                            <li><a href="#">living room</a></li>
+                                            <li><a href="#">kitchen</a></li>
+                                            <li><a href="#">office</a></li>
+                                            <li><a href="#">home decor</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-menu-column">
+                                        <div class="column-heading"><a href="#">jewellery</a></div>
+                                        <ul>
+                                            <li><a href="#">rings</a></li>
+                                            <li><a href="#">bracelets</a></li>
+                                            <li><a href="#">nackleces</a></li>
+                                            <li><a href="#">wedding bands</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-menu-column">
+                                        <div class="column-heading"><a href="#">autoparts</a></div>
+                                        <ul>
+                                            <li><a href="#">engine parts</a></li>
+                                            <li><a href="#">exhausts parts</a></li>
+                                            <li><a href="#">body parts</a></li>
+                                            <li><a href="#">brake parts</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">electronics</a>
+                            <div class="electronics-sub-menu">
+                                <div class="sub-menu-column-main">
+                                    <div class="sub-menu-column">
+                                        <div class="column-heading"><a href="#">mobiles</a></div>
+                                        <ul>
+                                            <li><a href="#">apple</a></li>
+                                            <li><a href="#">samsung</a></li>
+                                            <li><a href="#">xiaomi</a></li>
+                                            <li><a href="#">blackberry</a></li>
+                                            <li><a href="#">lenovo</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-menu-column">
+                                        <div class="column-heading"><a href="#">camera</a></div>
+                                        <ul>
+                                            <li><a href="#">lenses</a></li>
+                                            <li><a href="#">DSLR</a></li>
+                                            <li><a href="#">tripods</a></li>
+                                            <li><a href="#">accessories</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">sports & books</a>
+                            <ul class="sport-book-sub-menu">
+                                <li><a href="#">sports</a>
+                                    <ul class="sport-sub-menu">
+                                        <li><a href="#">cricket</a></li>
+                                        <li><a href="#">badminton</a></li>
+                                        <li><a href="#">football</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">books</a>
+                                    <ul class="book-sub-menu">
+                                        <li><a href="#">academics</a></li>
+                                        <li><a href="#">literature</a></li>
+                                        <li><a href="#">business</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">sale</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                    <div class="search-cart">
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-center"></div>
+            <div class="header-bottom"></div>
+        </div>
+    </div>
+</body>
+
+</html>

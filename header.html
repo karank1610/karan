@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        .header-main {
+            display: block;
+            margin: 30px 0;
+            clear: both;
+        }
+
+        .header-bottom {
+            display: block;
+            background-color: #051829;
+        }
+
+        .container {
+            display: block;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+
+        .menu-inner {
+            display: flex;
+        }
+
+        .menu-inner > li {
+            display: block;
+            position: relative;
+        }
+         .menu-inner > li:hover .sub-menu{
+            display: block;
+         }
+        .menu-inner > li:nth-child(3) a::after{
+            content: "\f078";
+            font-family: "Font Awesome 7 Free";
+            font-weight: 900;
+            color: #fff;
+            font-size: 16px;
+            padding-left: 5px;
+        }
+        .menu-inner > li:nth-child(5) a::after{
+            content: "\f078";
+            font-family: "Font Awesome 7 Free";
+            font-weight: 900;
+            color: #fff;
+            font-size: 16px;
+            padding-left: 5px;
+        }
+        .menu-inner > li > a {
+            font-size: 24px;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 20px;
+            padding: 17px 20px;
+            text-transform: capitalize;
+        }
+        .menu-inner > li .sub-menu{
+            display: none;
+            position: absolute;
+            top: 100%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            width: 150px;
+        }
+        .menu-inner > li .sub-menu > li > a{
+            color: #555555;
+            font-size: 16px;
+            padding: 10px 12px;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header start .. -->
+    <div class="header-main">
+        <div class="header-top"></div>
+        <div class="header-middle"></div>
+        <div class="header-bottom">
+            <div class="container">
+                <ul class="menu-inner">
+                    <li><a href="#">home</a></li>
+                    <li>
+                        <a href="#">pages</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">abou us</a></li>
+                            <li><a href="#">faq</a></li>
+                            <li><a href="#">404</a></li>
+                            <li><a href="#">pricing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">shop</a></li>
+                    <li><a href="#">electronics</a></li>
+                    <li><a href="#">sports & book</a></li>
+                    <li><a href="#">sale</a></li>
+                    <li><a href="#">contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- header End .. -->
+</body>
+
+</html>
