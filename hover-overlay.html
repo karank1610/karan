@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-color: bisque;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        .new-product-main {
+            display: block;
+            margin: 15px 0;
+        }
+
+        .new-product-main .container {
+            display: block;
+            max-width: 1200px;
+            padding: 0 15px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .new-product-main .new-product-child-main {
+            display: flex;
+
+        }
+
+        .new-product-child-main .new-product-child {
+            display: block;
+            width: 25%;
+            padding: 0 15px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            transition-duration: 0.5s;
+        }
+
+        /* a {
+            text-decoration: none;
+            color: white;
+            border: 1px solid transparent;
+            background-color: #000;
+            padding: 10px 15px;
+            font-size: 14px;
+        }
+
+        .addtocart {
+            text-align: center;
+            position: absolute;
+            bottom: -43px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            transition-duration: 0.3s;
+        }
+
+        .new-product-child-main .new-product-child:hover .addtocart {
+            bottom: 20px;
+        } */
+
+        i{
+            color: #fff;
+            font-size: 16px;
+            padding: 8px;
+            border: 1px solid transparent;
+            background-color: #8dba23;
+        }
+
+        .icons{
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            bottom: -43px;
+            left: 0;
+            right: 0;
+            justify-content: center;
+            transition-duration: 0.3s;
+        }
+        .new-product-child-main .new-product-child:hover .icons{
+            bottom: 20px;
+        }
+
+        .new-product-child-main .new-product-child .icons i:hover{
+            background-color: #000;
+            cursor: pointer;
+
+        }
+
+
+        /* hover content mathod  */
+
+        /* .new-product-child-main .new-product-child:nth-child(2) img:hover{  
+            content: url(assets/img/overlay_product1.jpg);
+            cursor: pointer;
+        } */
+
+
+        /* opacity method */
+
+
+        .new-product-child-main .new-product-child:nth-child(2) img:nth-child(2){
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            /* height: 100%; */
+            padding-left: 15px;
+            padding-right: 15px;
+            opacity: 0;
+            box-sizing: border-box;
+        }
+
+        .new-product-child-main .new-product-child:nth-child(2):hover img:first-child{
+            opacity: 0;
+        }
+        .new-product-child-main .new-product-child:nth-child(2):hover img:nth-child(2){
+            opacity: 1;
+        }
+
+        .new-product-child-main .new-product-child:nth-child(2) img{
+            transition-duration: 0.5s;
+        }
+
+        /* z index method */
+
+        /* .new-product-child-main .new-product-child:nth-child(2) img:nth-child(2) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition-duration: 0.5s;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+        }
+
+        .new-product-child-main .new-product-child:nth-child(2):hover img:nth-child(2) {
+            z-index: 1;
+        } */
+
+
+        .img-main{
+            width: 500px;
+            height: 500px;
+            display: block;
+            margin: 50px auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- new product row -->
+    <div class="new-product-main">
+        <div class="container">
+            <div class="new-product-child-main">
+                <div class="new-product-child">
+                    <img src="assets/img/product1.jpg" alt="">
+                    <span>wine</span>
+                    
+                    <!-- <div class="addtocart">
+                        <p><a href="#">ADD TO CART</a></p>
+                    </div> -->
+                    <div class="icons">
+                        <i class="fa-solid fa-heart wishlist-icon"></i>
+                        <i class="fa-solid fa-chart-simple compare-icon"></i>
+                    </div>
+                </div>
+
+                <div class="new-product-child">
+                    <img src="assets/img/product2.jpg" alt="">
+                    <img src="assets/img/overlay_product1.jpg" alt="">
+                </div>
+                <div class="new-product-child">
+                    <img src="assets/img/product3.jpg" alt="">
+                </div>
+                <div class="new-product-child">
+                    <img src="assets/img/product4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="img-main">
+        <img src="assets/img/adv-image-1.png" alt="">
+    </div>
+</body>
+
+</html>

@@ -59,7 +59,7 @@ img {
 .banner-upper-right {
     position: absolute;
     top: 4%;
-    left: 65%;
+    left: 62%;
     right: 0%;
     transform: translate(0, -50%);
     font-size: 14px;
@@ -67,7 +67,422 @@ img {
     color: white;
 }
 
-/* header block */
+/* header main block */
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header-main {
+    font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: absolute;
+    top: 13%;
+    left: 0;
+    right: 0;
+    transform: translate(0, -50%);
+    display: block;
+    clear: both;
+}
+
+.header-main a {
+    display: block;
+    text-decoration: none;
+}
+
+.header-top {
+    display: block;
+    background-color: #000000;
+}
+
+.header-top .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* navigation main manu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.nav-menu>li>a {
+    padding: 33px 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    transition-duration: 0.5s;
+}
+
+.nav-menu>li {
+    display: block;
+}
+
+.nav-menu>li>a:hover {
+    color: #8dba23;
+}
+
+.nav-menu>li:nth-child(2):hover a::after {
+    color: #8dba23;
+}
+
+.nav-menu>li:nth-child(3):hover a::after {
+    color: #8dba23;
+}
+
+.nav-menu>li:nth-child(4):hover a::after {
+    color: #8dba23;
+}
+
+.nav-menu>li:nth-child(5):hover a::after {
+    color: #8dba23;
+}
+
+.nav-menu>li:nth-child(2)>a::after {
+    content: "\f107";
+    font-family: "Font Awesome 7 Free";
+    font-weight: 600;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 7px;
+}
+
+.nav-menu>li:nth-child(3)>a::after {
+    content: "\f107";
+    font-family: "Font Awesome 7 Free";
+    font-weight: 900;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 7px;
+}
+
+.nav-menu>li:nth-child(4)>a::after {
+    content: "\f107";
+    font-family: "Font Awesome 7 Free";
+    font-weight: 900;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 7px;
+}
+
+.nav-menu>li:nth-child(5)>a::after {
+    content: "\f107";
+    font-family: "Font Awesome 7 Free";
+    font-weight: 900;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 7px;
+}
+
+.nav-menu .upper-text {
+    position: absolute;
+    top: 18px;
+    right: 14px;
+    background-color: #0cc485;
+    color: #fff;
+    font-size: 9px;
+    line-height: 1;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+/* page sub menu */
+
+.nav-menu>li {
+    display: block;
+    position: relative;
+}
+
+.nav-menu>li:hover .pages-sub-menu {
+    display: block;
+}
+
+.nav-menu>li .pages-sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
+    background-color: #8dba23;
+    width: 200px;
+    padding: 10px 0;
+}
+
+.nav-menu>li .pages-sub-menu>li>a {
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+}
+
+.nav-menu>li .pages-sub-menu>li>a:hover {
+    color: #0e0d0b;
+}
+
+/* shop sub menu */
+
+.nav-menu>li:hover .shop-sub-menu {
+    display: block;
+}
+
+.nav-menu>li .shop-sub-menu {
+    display: none;
+    position: absolute;
+    top: 99%;
+    left: 0;
+    transform: translate(-25.4%, 0);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
+    background-color: #8dba23;
+    width: 800px;
+}
+
+.nav-menu>li .shop-sub-menu li a {
+    color: #ffffff;
+    font-size: 13px;
+    padding: 7px 20px;
+    text-transform: capitalize;
+}
+
+.nav-menu>li .shop-sub-menu li a:hover {
+    color: #0e0d0b;
+}
+
+.nav-menu>li .sub-menu-column-main .column-heading a {
+    color: #0e0d0b;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+
+.nav-menu>li .sub-menu-column-main .column-heading::after {
+    content: "\f068";
+    font-family: "Font Awesome 7 Free";
+    font-weight: 800;
+    color: #0e0d0b;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.nav-menu>li .sub-menu-column-main {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-around;
+}
+
+/* electronics sub menu */
+
+.nav-menu>li:hover .electronics-sub-menu {
+    display: block;
+}
+
+.nav-menu>li .electronics-sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
+    background-color: #8dba23;
+    width: 350px;
+}
+
+.nav-menu>li .electronics-sub-menu li a {
+    color: #ffffff;
+    font-size: 13px;
+    padding: 7px 20px;
+    text-transform: capitalize;
+}
+
+.nav-menu>li .electronics-sub-menu li a:hover {
+    color: #0e0d0b;
+}
+
+.nav-menu>li .sub-menu-column-main .column-heading a {
+    color: #0e0d0b;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+
+.nav-menu>li .sub-menu-column-main .column-heading::after {
+    content: "\f068";
+    font-family: "Font Awesome 7 Free";
+    font-weight: 800;
+    color: #0e0d0b;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.nav-menu>li .sub-menu-column-main {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-around;
+}
+
+/* sports and books sub menu */
+
+.nav-menu>li {
+    display: block;
+    position: relative;
+}
+
+.nav-menu>li:hover .sport-book-sub-menu {
+    display: block;
+}
+
+.nav-menu>li .sport-book-sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
+    background-color: #8dba23;
+    width: 200px;
+    padding: 10px 0;
+}
+
+.nav-menu>li .sport-book-sub-menu>li>a {
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+}
+
+.nav-menu>li .sport-book-sub-menu>li>a:hover {
+    color: #0e0d0b;
+}
+
+.nav-menu>li .sport-book-sub-menu>li:first-child:hover a::after {
+    color: #0e0d0b;
+}
+
+.nav-menu>li .sport-book-sub-menu>li:nth-child(2):hover a::after {
+    color: #0e0d0b;
+}
+
+.nav-menu>li .sport-book-sub-menu>li:first-child>a::after {
+    content: "\f107";
+    font-family: "Font Awesome 7 Free";
+    font-weight: 900;
+    color: #fff;
+    font-size: 12px;
+    float: right;
+}
+
+.nav-menu>li .sport-book-sub-menu>li:nth-child(2)>a::after {
+    content: "\f107";
+    font-family: "Font Awesome 7 Free";
+    font-weight: 900;
+    color: #fff;
+    font-size: 12px;
+    float: right;
+}
+
+/* sport sub menu inside sports and book sub menu */
+
+.sport-book-sub-menu-menu>li {
+    display: block;
+    position: relative;
+}
+
+.sport-book-sub-menu>li:hover .sport-sub-menu {
+    display: block;
+}
+
+.sport-book-sub-menu>li .sport-sub-menu {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 100%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
+    background-color: #8dba23;
+    width: 200px;
+    padding: 10px 0;
+}
+
+.sport-book-sub-menu>li .sport-sub-menu>li>a {
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+}
+
+.sport-book-sub-menu>li .sport-sub-menu>li>a:hover {
+    color: #0e0d0b;
+}
+
+/* books sub menu inside sports and book sub menu */
+
+.sport-book-sub-menu-menu>li {
+    display: block;
+    position: relative;
+}
+
+.sport-book-sub-menu>li:hover .book-sub-menu {
+    display: block;
+}
+
+.sport-book-sub-menu>li .book-sub-menu {
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 100%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
+    background-color: #8dba23;
+    width: 200px;
+    padding: 10px 0;
+}
+
+.sport-book-sub-menu>li .book-sub-menu>li>a {
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+}
+
+.sport-book-sub-menu>li .book-sub-menu>li>a:hover {
+    color: #0e0d0b;
+}
+
+/* search and cart */
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+.search-cart a {
+    color: #ffffff;
+    padding: 15px 10px;
+    font-size: 20px;
+}
+
+.search-cart a:first-child {
+    border-right: 1px solid #737373;
+    padding: 5px 15px;
+    margin-right: 5px;
+}
+
+.search-cart a:hover {
+    color: #8dba23;
+}
 
 
 /* adv block */
@@ -632,17 +1047,18 @@ img {
     font-size: 14px;
     background-color: #f5f5f5;
 }
-.newsletter{
+
+.newsletter {
     position: relative;
 }
 
 .newsletter::after {
-	content: "\f003";
-	font-weight: 600;
-	font-family: "Font Awesome 7 Free";
-	position: absolute;
-	right: 30%;
-	top: 13%;
+    content: "\f003";
+    font-weight: 600;
+    font-family: "Font Awesome 7 Free";
+    position: absolute;
+    right: 30%;
+    top: 13%;
 }
 
 .newsletter-input::placeholder {
@@ -750,10 +1166,11 @@ ul {
     letter-spacing: 0.4px;
 }
 
-.top-inner .footer-column-1 .info ul{
+.top-inner .footer-column-1 .info ul {
     padding-top: 10px;
 }
-.top-inner .footer-column-1 .info ul li{
+
+.top-inner .footer-column-1 .info ul li {
     padding-bottom: 10px;
 }
 
