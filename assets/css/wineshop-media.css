@@ -1,0 +1,42 @@
+@media(max-width:1399px) {
+    .banner-upper-left {
+        top: 4%;
+        left: 8%;
+        right: 0;
+        transform: translate(0, -50%);
+    }
+
+    .banner-upper-right {
+        top: 4%;
+        left: 64.8%;
+        right: 0%;
+    }
+
+    .header-main{
+        top: 15%;
+    }
+}
+
+@media(max-width:1199px){
+
+    .upper-banner-text{
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #181818;
+        height: 60px;
+    }
+    .banner-upper-left {
+        position: static;
+    }
+    .banner-upper-right {
+        position: static;
+    }
+
+    .header-main{
+        position: static;
+    }
+
+}

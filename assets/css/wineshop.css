@@ -38,7 +38,7 @@ img {
 .banner-upper-left {
     position: absolute;
     top: 4%;
-    left: 15%;
+    left: 19%;
     right: 0;
     transform: translate(0, -50%);
     font-size: 14px;
@@ -59,7 +59,7 @@ img {
 .banner-upper-right {
     position: absolute;
     top: 4%;
-    left: 62%;
+    left: 61%;
     right: 0%;
     transform: translate(0, -50%);
     font-size: 14px;
