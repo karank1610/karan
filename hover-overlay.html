@@ -9,7 +9,7 @@
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        body{
+        body {
             background-color: bisque;
         }
 
@@ -42,7 +42,6 @@
             padding: 0 15px;
             box-sizing: border-box;
             position: relative;
-            overflow: hidden;
             transition-duration: 0.5s;
         }
 
@@ -69,7 +68,7 @@
             bottom: 20px;
         } */
 
-        i{
+        i {
             color: #fff;
             font-size: 16px;
             padding: 8px;
@@ -77,21 +76,28 @@
             background-color: #8dba23;
         }
 
-        .icons{
+        .product-img {
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .icons {
             display: flex;
             gap: 10px;
             position: absolute;
-            bottom: -43px;
+            bottom: -52px;
             left: 0;
             right: 0;
             justify-content: center;
             transition-duration: 0.3s;
         }
-        .new-product-child-main .new-product-child:hover .icons{
+
+        .new-product-child-main .new-product-child:hover .icons {
             bottom: 20px;
         }
 
-        .new-product-child-main .new-product-child .icons i:hover{
+        .new-product-child-main .new-product-child .icons i:hover {
             background-color: #000;
             cursor: pointer;
 
@@ -109,27 +115,28 @@
         /* opacity method */
 
 
-        .new-product-child-main .new-product-child:nth-child(2) img:nth-child(2){
+        .new-product-child-main .new-product-child:nth-child(2) img:nth-child(2) {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             width: 100%;
-            /* height: 100%; */
-            padding-left: 15px;
-            padding-right: 15px;
+            height: 100%;
+            /* padding-left: 15px; */
+            /* padding-right: 15px; */
             opacity: 0;
-            box-sizing: border-box;
+            /* box-sizing: border-box; */
         }
 
-        .new-product-child-main .new-product-child:nth-child(2):hover img:first-child{
+        .new-product-child-main .new-product-child:nth-child(2):hover img:first-child {
             opacity: 0;
         }
-        .new-product-child-main .new-product-child:nth-child(2):hover img:nth-child(2){
+
+        .new-product-child-main .new-product-child:nth-child(2):hover img:nth-child(2) {
             opacity: 1;
         }
 
-        .new-product-child-main .new-product-child:nth-child(2) img{
+        .new-product-child-main .new-product-child:nth-child(2) img {
             transition-duration: 0.5s;
         }
 
@@ -153,12 +160,67 @@
         } */
 
 
-        .img-main{
-            width: 500px;
-            height: 500px;
+        .img-main {
+            width: 25%;
             display: block;
             margin: 50px auto;
+            position: relative;
         }
+
+         .img-main a:before{
+            background: rgba(0,0,0,0.2);
+            content: "";
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transform: scale(0);
+            position: absolute;
+            transition-duration: 0.3s;
+        }
+
+        .img-main a:hover::before{
+            opacity: 1;
+            width: 100%;
+            height: 100%;
+            transform: scale(1);
+        }
+
+        /* .img-main a:before{
+            background: rgba(255,255,255,0.41) none repeat scroll 0 0;
+            content: "";
+            height: 0;
+            width: 0;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            position: absolute;
+        }
+        .img-main a:hover::before{
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            transition-duration: 1s;
+        }
+
+                .img-main a:after{
+            background: rgba(255,255,255,0.41) none repeat scroll 0 0;
+            content: "";
+            height: 0;
+            width: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 1;
+            position: absolute;
+        }
+        .img-main a:hover::after{
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            transition-duration: 1s;
+        } */
+
 
     </style>
 </head>
@@ -169,21 +231,26 @@
         <div class="container">
             <div class="new-product-child-main">
                 <div class="new-product-child">
-                    <img src="assets/img/product1.jpg" alt="">
+                    <div class="product-img">
+                        <img src="assets/img/product1.jpg" alt="">
+                        <div class="icons">
+                            <i class="fa-solid fa-heart wishlist-icon"></i>
+                            <i class="fa-solid fa-chart-simple compare-icon"></i>
+                        </div>
+                    </div>
                     <span>wine</span>
-                    
+
                     <!-- <div class="addtocart">
                         <p><a href="#">ADD TO CART</a></p>
                     </div> -->
-                    <div class="icons">
-                        <i class="fa-solid fa-heart wishlist-icon"></i>
-                        <i class="fa-solid fa-chart-simple compare-icon"></i>
-                    </div>
+
                 </div>
 
                 <div class="new-product-child">
-                    <img src="assets/img/product2.jpg" alt="">
-                    <img src="assets/img/overlay_product1.jpg" alt="">
+                    <div class="product-img">
+                        <img src="assets/img/product2.jpg" alt="">
+                        <img src="assets/img/overlay_product1.jpg" alt="">
+                    </div>
                 </div>
                 <div class="new-product-child">
                     <img src="assets/img/product3.jpg" alt="">
@@ -195,7 +262,9 @@
         </div>
     </div>
     <div class="img-main">
-        <img src="assets/img/adv-image-1.png" alt="">
+        <a href="">
+            <img src="assets/img/adv-image-1.png" alt="">
+        </a>
     </div>
 </body>
 
