@@ -13,6 +13,7 @@ img {
 .banner-main {
     font-family: 'Roboto Condensed', 'Helvetica Neue', 'Helvetica', 'Arial,sans-serif';
     position: relative;
+    z-index: 1;
 }
 
 .banner-left-arrow {
@@ -81,12 +82,12 @@ ul {
 .header-main {
     font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     position: absolute;
-    top: 13%;
+    top: 7%;
     left: 0;
     right: 0;
-    transform: translate(0, -50%);
     display: block;
     clear: both;
+    z-index: 9999;
 }
 
 .header-main a {

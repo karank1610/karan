@@ -12,31 +12,102 @@
         right: 0%;
     }
 
-    .header-main{
+    .header-main {
         top: 15%;
     }
 }
 
-@media(max-width:1199px){
+@media(max-width:1199px) {
 
-    .upper-banner-text{
-        position: relative;
+    .upper-banner-text {
         display: flex;
-        width: 100%;
         justify-content: space-around;
-        align-items: center;
         background-color: #181818;
-        height: 60px;
+        padding: 10px 0;
+        z-index: 99999;
     }
-    .banner-upper-left {
-        position: static;
-    }
+
+    .banner-upper-left,
     .banner-upper-right {
         position: static;
+        transform: none;
+        margin: 10px 15px;
+        font-size: 12px;
     }
 
-    .header-main{
-        position: static;
+.header-main {
+    position: relative;      
+    z-index: 1000;           
+    background: #000;
+    padding: 10px 0;
+    box-sizing: border-box;
+    transform: none;
+    clear: both;
+  }
+
+  .header-top .container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .header-logo {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+  .header-logo img { 
+    max-height: 55px; height: auto; 
+}
+
+  .search-cart {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+  .search-cart a { 
+    margin-left: 12px; color: #fff; font-size: 18px; 
+}
+
+  .nav-menu {
+    order: 2;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px solid #fff;
+    box-sizing: border-box;
+  }
+  .nav-menu > li { display: inline-flex; align-items: center; }
+  .nav-menu > li > a {
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .nav-menu > li { position: relative; }
+  .nav-menu > li .pages-sub-menu,
+  .nav-menu > li .shop-sub-menu,
+  .nav-menu > li .electronics-sub-menu,
+  .nav-menu > li .sport-book-sub-menu {
+    left: 0;
+    transform: none;
+    top: 100%;
+  }
+
+  .banner-main {
+    position: static;
+     z-index: 2; 
     }
 
 }
