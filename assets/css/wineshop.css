@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: "Fjalla One", sans-serif;
@@ -13,7 +14,6 @@ img {
 .banner-main {
     font-family: 'Roboto Condensed', 'Helvetica Neue', 'Helvetica', 'Arial,sans-serif';
     position: relative;
-    z-index: 1;
 }
 
 .banner-left-arrow {
@@ -60,12 +60,28 @@ img {
 .banner-upper-right {
     position: absolute;
     top: 4%;
-    left: 61%;
+    left: 60.2%;
     right: 0%;
     transform: translate(0, -50%);
     font-size: 14px;
     letter-spacing: 1px;
     color: white;
+}
+
+.banner-upper-right span:first-child:after{
+    content: "";
+    border-right: 1px solid #ffffff;
+    padding: 3px 5px;
+    margin-right: 5px;
+    font-size:7px;
+}
+
+.banner-upper-right span:nth-child(2):after{
+    content: "";
+    border-right: 1px solid #ffffff;
+    padding: 3px 5px;
+    margin-right: 5px;
+    font-size:7px;
 }
 
 /* header main block */
@@ -82,12 +98,12 @@ ul {
 .header-main {
     font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     position: absolute;
-    top: 7%;
+    top: 13%;
     left: 0;
     right: 0;
+    transform: translate(0, -50%);
     display: block;
     clear: both;
-    z-index: 9999;
 }
 
 .header-main a {
@@ -101,11 +117,15 @@ ul {
 }
 
 .header-top .container {
-    display: flex;
+    display: block;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
+}
+
+.header-top .top-content{
+    display: flex;
 }
 
 /* navigation main manu */
@@ -591,31 +611,32 @@ ul {
 }
 
 .product-img {
-            display: block;
-            position: relative;
-            overflow: hidden;
-        }
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
 
-        .product-img .icons {
-            display: flex;
-            gap: 10px;
-            position: absolute;
-            bottom: -52px;
-            left: 0;
-            right: 0;
-            justify-content: center;
-            transition-duration: 0.3s;
-        }
+.product-img .icons {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: -52px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    transition-duration: 0.3s;
+}
 
-        .new-product-child-main .new-product-child:hover .icons {
-            bottom: 20px;
-        }
+.new-product-child-main .new-product-child:hover .icons {
+    bottom: 20px;
+}
 
-        .new-product-child-main .new-product-child .icons i:hover {
-            background-color: #000;
-            cursor: pointer;
+.new-product-child-main .new-product-child .icons i:hover {
+    background-color: #000;
+    cursor: pointer;
 
-        }
+}
+
 
 /* new product details */
 

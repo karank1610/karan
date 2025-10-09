@@ -19,95 +19,73 @@
 
 @media(max-width:1199px) {
 
-    .upper-banner-text {
-        display: flex;
-        justify-content: space-around;
-        background-color: #181818;
-        padding: 10px 0;
-        z-index: 99999;
+    .upper-banner-text .container{
+      display: block;
+      margin: 0 auto;
+      box-sizing: border-box;
     }
 
-    .banner-upper-left,
-    .banner-upper-right {
+    .upper-banner-text {
+        position: relative;
+        background-color: #181818;
+        padding: 20px 0;
+    }
+
+    .upper-content{
+      display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .banner-upper-left,.banner-upper-right {
         position: static;
         transform: none;
-        margin: 10px 15px;
-        font-size: 12px;
     }
 
-.header-main {
-    position: relative;      
-    z-index: 1000;           
-    background: #000;
-    padding: 10px 0;
-    box-sizing: border-box;
-    transform: none;
-    clear: both;
-  }
+    .header-main {
+        position: relative;
+        top: 0;
+        transform: none;
+    }
 
-  .header-top .container {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    gap: 10px;
-    padding: 0 10px;
-  }
+    /* .nav-menu>li>a{
+        font-size: 10px;
+    } */
 
-  .header-logo {
-    order: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 20px;
-  }
-  .header-logo img { 
-    max-height: 55px; height: auto; 
-}
+    .header-main .top-content {
+        flex-wrap: wrap;
+        max-width: 970px;  /*  use this max width for all container in 1199px media  */
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 5px 0;
+        box-sizing: border-box;
+    }
 
-  .search-cart {
-    order: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 20px;
-  }
-  .search-cart a { 
-    margin-left: 12px; color: #fff; font-size: 18px; 
-}
+    .container {
+        max-width: 970px;
+    }
 
-  .nav-menu {
-    order: 2;
-    flex: 0 0 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-top: 10px;
-    border-top: 1px solid #fff;
-    box-sizing: border-box;
-  }
-  .nav-menu > li { display: inline-flex; align-items: center; }
-  .nav-menu > li > a {
-    padding: 10px 14px;
-    font-size: 14px;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
+    .header-main .container .header-logo {
+        order: 1;
+        width: 18%;
+    }
 
-  .nav-menu > li { position: relative; }
-  .nav-menu > li .pages-sub-menu,
-  .nav-menu > li .shop-sub-menu,
-  .nav-menu > li .electronics-sub-menu,
-  .nav-menu > li .sport-book-sub-menu {
-    left: 0;
-    transform: none;
-    top: 100%;
-  }
+    .header-main .container .search-cart {
+        order: 2;
+        width: 82%;
+        justify-content: flex-end;
+    }
 
-  .banner-main {
-    position: static;
-     z-index: 2; 
+    .header-main .container .nav-menu {
+        order: 3;
+        width: 100%;
+        border-top: 1px solid#ffffff;
+    }
+
+    .banner-main{
+        display: block;
     }
 
 }
