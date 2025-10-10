@@ -918,6 +918,7 @@ ul {
     font-style: italic;
     font-size: 14px;
     font-weight: 500;
+    max-width: 1200px;
 }
 
 .rev-child .rev-info::after {

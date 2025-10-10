@@ -19,10 +19,10 @@
 
 @media(max-width:1199px) {
 
-    .upper-banner-text .container{
-      display: block;
-      margin: 0 auto;
-      box-sizing: border-box;
+    .upper-banner-text .container {
+        display: block;
+        margin: 0 auto;
+        box-sizing: border-box;
     }
 
     .upper-banner-text {
@@ -31,16 +31,19 @@
         padding: 20px 0;
     }
 
-    .upper-content{
-      display: flex;
+    .upper-content {
+        display: flex;
         width: 100%;
         justify-content: space-between;
         align-items: center;
     }
 
-    .banner-upper-left,.banner-upper-right {
+    .banner-upper-left,
+    .banner-upper-right {
         position: static;
         transform: none;
+        font-size: 13px;
+        letter-spacing: 0;
     }
 
     .header-main {
@@ -55,11 +58,11 @@
 
     .header-main .top-content {
         flex-wrap: wrap;
-        max-width: 970px;  /*  use this max width for all container in 1199px media  */
+        max-width: 970px;
+        /*  use this max width for all container in 1199px media  */
         align-items: center;
         justify-content: space-between;
         margin: 0 auto;
-        padding: 5px 0;
         box-sizing: border-box;
     }
 
@@ -70,6 +73,7 @@
     .header-main .container .header-logo {
         order: 1;
         width: 18%;
+        padding: 8px 0;
     }
 
     .header-main .container .search-cart {
@@ -84,8 +88,66 @@
         border-top: 1px solid#ffffff;
     }
 
-    .banner-main{
+    .banner-main {
         display: block;
+    }
+
+    .nav-menu>li>a {
+        padding: 20px 15px;
+    }
+
+    .nav-menu .upper-text {
+        top: 8px;
+        font-size: 8px;
+        right: 12px;
+    }
+
+    .adv-child span {
+        font-size: 18px;
+    }
+
+    .adv-child p {
+        font-size: 28px;
+    }
+
+    .adv-main {
+        margin-bottom: 50px;
+    }
+
+    .new-product-main .container {
+        max-width: 960px;
+    }
+
+    .adv2-main .container {
+        max-width: 960px;
+    }
+
+    .trending-product-main .container {
+        max-width: 960px;
+    }
+
+    .rev-child .rev-info {
+        max-width: 650px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+
+    .rev-main {
+        margin-bottom: 50px;
+    }
+
+    .recent-posts-main .container {
+        max-width: 960px;
+    }
+
+    .brand-main .container {
+        max-width: 960px;
+    }
+
+    .top-inner {
+        padding: 35px 0;
+        box-sizing: border-box;
     }
 
 }
