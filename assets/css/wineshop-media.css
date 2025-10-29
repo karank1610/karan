@@ -356,4 +356,43 @@
     .top-inner .footer-column ul li {
         margin-bottom: 25px;
     }
+
+}
+
+@media(max-width:768px) {
+
+    .container {
+        max-width: 720px;
+    }
+
+    .banner-left-arrow {
+        top: 65%;
+        left: 3%;
+    }
+
+    .banner-right-arrow {
+        top: 65%;
+        left: 90%;
+    }
+
+    .new-product-main .new-product-child-main .new-product-child {
+        width: 33.33%;
+    }
+
+    .trending-product-main .trending-product-child-main .trending-product-child {
+        width: 33.33%;
+    }
+
+    .sale-adv-detail .title {
+        font-size: 40px;
+    }
+
+    .sale-adv-detail .title2 {
+        font-size: 60px;
+    }
+
+    .recent-posts-child-main .recent-posts-child {
+        width: 50%;
+    }
+
 }
