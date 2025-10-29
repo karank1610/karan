@@ -151,3 +151,209 @@
     }
 
 }
+
+@media(max-width:991px) {
+
+    .upper-banner-text .container {
+        display: block;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .upper-banner-text {
+        position: relative;
+        background-color: #181818;
+        padding: 20px 0;
+    }
+
+    .upper-content {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .banner-upper-left,
+    .banner-upper-right {
+        position: static;
+        transform: none;
+        font-size: 13px;
+        letter-spacing: 0;
+    }
+
+    .header-main {
+        position: relative;
+        top: 0;
+        transform: none;
+    }
+
+    /* .nav-menu>li>a{
+        font-size: 10px;
+    } */
+
+    .header-main .top-content {
+        flex-wrap: wrap;
+        max-width: 720px;
+        /*  use this max width for all container in 991px media  */
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+
+    .header-main .container .header-logo {
+        order: 1;
+        width: 18%;
+        padding: 8px 0;
+    }
+
+    .header-main .container .search-cart {
+        order: 2;
+        width: 82%;
+        justify-content: flex-end;
+    }
+
+    .header-main .container .nav-menu {
+        order: 3;
+        width: 100%;
+        border-top: 1px solid#ffffff;
+    }
+
+    .banner-main {
+        display: block;
+    }
+
+    .nav-menu>li>a {
+        padding: 20px 15px;
+    }
+
+    .nav-menu .upper-text {
+        top: 8px;
+        font-size: 8px;
+        right: 12px;
+    }
+
+    .adv-child span {
+        font-size: 16px;
+    }
+
+    .adv-child p {
+        font-size: 22px;
+    }
+
+    .adv-main {
+        margin-bottom: 50px;
+    }
+
+    .new-product-main .container {
+        max-width: 960px;
+    }
+
+    .new-product-main .new-product-child-main .new-product-child:last-child {
+        display: none;
+    }
+
+    .new-product-main .new-product-child-main {
+        justify-content: center;
+    }
+
+    .adv2-main .container {
+        max-width: 800px;
+    }
+
+    .trending-product-main .container {
+        max-width: 960px;
+    }
+
+    .trending-product-main .trending-product-child-main .trending-product-child:last-child {
+        display: none;
+    }
+
+    .trending-product-main .trending-product-child-main {
+        justify-content: center;
+    }
+
+    .rev-child .rev-info {
+        max-width: 650px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+
+    .rev-main {
+        margin-bottom: 50px;
+    }
+
+    .recent-posts-main .container {
+        max-width: 960px;
+    }
+
+    .recent-posts-main .recent-posts-child-main .recent-posts-child:last-child {
+        display: none;
+    }
+
+    .recent-posts-main .recent-posts-child-main {
+        justify-content: center;
+    }
+
+    .recent-posts-child-main .recent-posts-child {
+        width: 40%;
+    }
+
+    .brand-main .container {
+        max-width: 720px;
+    }
+
+    .brand-main .brand-child-main .brand-child {
+        width: 25%;
+    }
+
+    .brand-main .brand-child-main .brand-child:last-child {
+        display: none;
+    }
+
+    .brand-main .brand-child-main .brand-child:nth-child(5) {
+        display: none;
+    }
+
+    .top-inner {
+        padding: 35px 0;
+        box-sizing: border-box;
+    }
+
+    .footer-top .container {
+        max-width: 720px;
+    }
+
+    .footer-column-1 .info-main .column-heading a img {
+        max-width: 280px;
+    }
+
+    .footer-column {
+        padding: 0 30px;
+    }
+
+    .footer-column-1 {
+        padding: 0 30px;
+    }
+
+    .top-inner .footer-column-1 .info ul {
+        padding-top: 25px;
+    }
+
+    .top-inner .footer-column-1 .info ul li {
+        padding-bottom: 25px;
+    }
+
+    .top-inner .footer-column-1 .info ul li {
+        line-height: 1.4;
+    }
+
+    .top-inner .footer-column ul li {
+        margin-bottom: 25px;
+    }
+}
