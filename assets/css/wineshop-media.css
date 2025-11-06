@@ -359,7 +359,7 @@
 
 }
 
-@media(max-width:768px) {
+@media(max-width:767px) {
 
     .container {
         max-width: 720px;
@@ -393,6 +393,112 @@
 
     .recent-posts-child-main .recent-posts-child {
         width: 50%;
+    }
+
+}
+
+@media(max-width:639px) {
+
+    .upper-banner-text {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .header-main .container .header-logo {
+        width: 40%;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .header-main .container .search-cart {
+        width: 60%;
+    }
+
+    .header-main .container .header-logo::before {
+        content: "\f0c9";
+        font-family: "Font Awesome 7 Free";
+        font-weight: 600;
+        color: #8dba23;
+        font-size: 30px;
+    }
+
+    .banner-left-arrow {
+        top: 60%;
+        left: 3%;
+        width: 40px;
+        height: 40px;
+    }
+
+    .banner-right-arrow {
+        top: 60%;
+        left: 89%;
+        width: 40px;
+        height: 40px;
+    }
+
+    .adv-parent {
+        flex-direction: column;
+    }
+
+    .adv-parent .adv-child {
+        width: 100%;
+    }
+
+    .new-product-main .container {
+        max-width: 540px;
+    }
+
+    .new-product-main .new-product-child-main .new-product-child:nth-child(3) {
+        display: none;
+    }
+
+    .new-product-main .new-product-child-main .new-product-child {
+        width: 50%;
+    }
+
+    .adv2-main .adv2-parent {
+        flex-direction: column;
+    }
+
+    .adv2-main .adv2-parent .adv2-child {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .adv2-main .container {
+        max-width: 540px;
+    }
+
+    .trending-product-main .trending-product-child-main .trending-product-child:nth-child(3) {
+        display: none;
+    }
+
+    .trending-product-main .trending-product-child-main .trending-product-child {
+        width: 50%;
+    }
+
+    .trending-product-main .container {
+        max-width: 540px;
+    }
+
+    .sale-adv-child {
+        padding: 200px 0;
+    }
+
+    .sale-adv-detail .title {
+        font-size: 40px;
+    }
+
+    .sale-adv-detail .title2 {
+        font-size: 40px;
+    }
+
+    .sale-adv-detail .info {
+        font-size: 14px;
     }
 
 }
