@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <script>
+        hour = 0;
+        minute = 0;
+        second = 0;
+        function clock() {
+            second++;
+            if (second == 60) {
+                second = 0;
+                minute++;
+                if (minute == 60) {
+                    minute = 0;
+                    hour++;
+                    if (hour == 24) {
+                        hour = 0;
+                    }
+                }
+            }
+            document.getElementById("hh").value = hour;
+            document.getElementById("mm").value = minute;
+            document.getElementById("ss").value = second;
+            setTimeout("clock()", 1000);
+        }
+    </script>
+    <style>
+        input {
+            width: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body onload="clock()">
+    <input type="text" id="hh" placeholder="HH"> :
+    <input type="text" id="mm" placeholder="MM"> :
+    <input type="text" id="ss" placeholder="SS">
+</body>
+
+</html>
